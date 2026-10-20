@@ -1,137 +1,312 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Lawton Analytics</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Sir Lawton · Excel, Data & Learning</title>
+	<meta name="description" content="Sir Lawton (Thomas Boakye) — Excel coach and data analyst. Practical Excel training, dashboards and daily lessons for business professionals." />
+	<meta property="og:title" content="Sir Lawton · Excel, Data & Learning" />
+	<meta property="og:description" content="Practical Excel training, dashboards and daily lessons for business professionals." />
+	<meta property="og:type" content="website" />
+	<meta name="theme-color" content="#0B3D2E" />
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B3D2E'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='%23D4A72C' text-anchor='middle'%3ESL%3C/text%3E%3C/svg%3E" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/sirlawton.css?v=5" />
+</head>
+<body>
 
-		<!-- Header -->
-			<div id="header">
-
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							
-							<h1 id="title">Lawton Analytics</h1>
-							<p>    |    Excel   |    SQL    |    Tableau    |    R    |</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Welcome</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								</ul>
-						</nav>
-
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://twitter.com/LawtonAnalytics" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/SirLawton/LawtonAnalytics" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/thomas-boakye/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						</ul>
-
-				</div>
-
+	<!-- Header: brand + ribbon-style tabs + channels, formula bar below -->
+	<header class="topbar">
+		<div class="topbar-row">
+			<a href="#home" class="brand" aria-label="Sir Lawton home">
+				<span class="brand-mark">SL</span>
+				<span class="brand-name">Sir Lawton</span>
+			</a>
+			<nav class="ribbon" aria-label="Sections">
+				<a href="#home" class="tab active">Home</a>
+				<a href="#about" class="tab">About</a>
+				<a href="#services" class="tab">Services</a>
+				<a href="#training" class="tab">Training</a>
+				<a href="#projects" class="tab">Projects</a>
+				<a href="#content" class="tab">Learn</a>
+				<a href="#contact" class="tab">Contact</a>
+			</nav>
+			<div class="join">
+				<span class="join-label">Join</span>
+				<a class="join-btn wa" href="https://whatsapp.com/channel/0029VbCvEqU5Ui2bZIMirT0B" target="_blank" rel="noopener" aria-label="Join the WhatsApp channel" title="WhatsApp channel"><i class="fab fa-whatsapp"></i></a>
+				<a class="join-btn tg" href="https://t.me/LawtonBIAnalytics" target="_blank" rel="noopener" aria-label="Join the Telegram channel" title="Telegram channel"><i class="fab fa-telegram-plane"></i></a>
 			</div>
+		</div>
+		<div class="formula-bar" aria-hidden="true">
+			<span class="name-box" id="nameBox">A1</span>
+			<span class="fx">fx</span>
+			<span class="formula" id="formulaText">=WELCOME("Sir Lawton")</span>
+		</div>
+	</header>
 
-		<!-- Main -->
-			<div id="main">
+	<main>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+		<!-- HERO -->
+		<section id="home" class="hero" data-cell="A1" data-formula='=WELCOME("Sir Lawton")'>
+			<div class="grid-bg" aria-hidden="true"></div>
+			<div class="wrap hero-inner">
+				<div class="hero-copy">
+					<h1>Spreadsheets<br />that work.<br /><span class="accent">Skills that stick.</span></h1>
+					<div class="cta-row">
+						<a href="#training" class="btn btn-gold">Explore training <i class="fas fa-arrow-right"></i></a>
+						<a href="#projects" class="btn btn-ghost">See my work</a>
+					</div>
+				</div>
 
-							<header>
-								<h2 class="alt">Hello! Welcome to <strong>Lawton Analytics</strong>,</h2>  
-								<h4> we analyse your data to help you make data-driven and informed business decisions.</h4>
-								
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">View Projects</a>
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Have a look at my portfolio filled with amazing projects with insights that would blow your mind. For now, there is only one available project, but hey, dont be discouraged, you will see more soon. Keep visiting.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://www.kaggle.com/datasets/thomasboakye/cyclistic-bike-share?datasetId=2600147" class="image fit"><img src="images/CyclisticBike.png" alt="" /></a>
-										<header>
-											<h2> Google Captsone Project </h2>
-											<h1> How can Cyclistic convert casual riders to subscribed members?</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://medium.com/@LawtonAnalytics/whatsapp-group-chat-1e5da2dc8e44" class="image fit"><img src="images/whatsapp-logo-1.png" alt="" /></a>
-										<header>
-											<h3>WhatsApp Group Chat Anlysis</h3>
-										</header>
-									</article>
+				<!-- Work showcase slideshow: swap any image in images/work/ to replace a slide -->
+				<div class="showcase" id="showcase" tabindex="0" aria-roledescription="carousel" aria-label="Examples of my work">
+					<div class="slides">
+						<!-- Live, animated dashboard -->
+						<div class="slide live active" data-title="Live sales dashboard" data-sub="Formulas, KPIs and charts updating in real time">
+							<div class="live-inner">
+								<div class="lv-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="lv-file">Sales_Dashboard.xlsx</span></div>
+								<div class="lv-formula"><span class="fx">fx</span><span id="heroFormula" class="typed"></span><span class="caret"></span></div>
+								<div class="lv-kpis">
+									<div class="lv-kpi"><span class="l">Revenue</span><span class="v" data-count="128.4" data-suffix="k">0</span><span class="d up">▲ 12%</span></div>
+									<div class="lv-kpi"><span class="l">Margin</span><span class="v" data-count="34.7" data-suffix="%">0</span><span class="d up">▲ 3.1pt</span></div>
+									<div class="lv-kpi"><span class="l">On-time</span><span class="v" data-count="96.2" data-suffix="%">0</span><span class="d dn">▼ 0.4pt</span></div>
 								</div>
-								
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/comingup.png" alt="" /></a>
-										<header>
-											<h3>Next Project: Coming up soon</h3>
-										</header>
-									</article>
+								<div class="lv-chart">
+									<div class="lv-bar" style="--h:38%"><span>Jan</span></div>
+									<div class="lv-bar" style="--h:52%"><span>Feb</span></div>
+									<div class="lv-bar" style="--h:47%"><span>Mar</span></div>
+									<div class="lv-bar" style="--h:66%"><span>Apr</span></div>
+									<div class="lv-bar" style="--h:61%"><span>May</span></div>
+									<div class="lv-bar" style="--h:79%"><span>Jun</span></div>
+									<div class="lv-bar hi" style="--h:92%"><span>Jul</span></div>
 								</div>
 							</div>
-
 						</div>
-					</section>
-
-				<
-
-				
-					</section>
-
+						<figure class="slide" data-title="Sales performance dashboard" data-sub="KPIs, target tracking and regional mix">
+							<img src="images/work/sales-dashboard.png" alt="Sales performance dashboard" loading="lazy" />
+						</figure>
+						<figure class="slide" data-title="Workforce &amp; HR analytics" data-sub="Headcount, turnover and leave">
+							<img src="images/work/hr-dashboard.png" alt="Workforce and HR analytics dashboard" loading="lazy" />
+						</figure>
+						<figure class="slide" data-title="Payroll summary" data-sub="Gross to net, with PAYE and SSNIT">
+							<img src="images/work/payroll-dashboard.png" alt="Payroll summary dashboard" loading="lazy" />
+						</figure>
+						<figure class="slide" data-title="Budget vs actual" data-sub="Variance tracking by category">
+							<img src="images/work/budget-dashboard.png" alt="Budget vs actual dashboard" loading="lazy" />
+						</figure>
+						<figure class="slide" data-title="Inventory &amp; stock control" data-sub="Reorder alerts and delivery checks">
+							<img src="images/work/stock-dashboard.png" alt="Inventory and stock control dashboard" loading="lazy" />
+						</figure>
+						<figure class="slide" data-title="Leave register" data-sub="Excel Table with live balances">
+							<img src="images/work/leave-register.png" alt="Leave register worksheet" loading="lazy" />
+						</figure>
+						<figure class="slide" data-title="Cyclistic bike-share" data-sub="Rider behaviour case study">
+							<img src="images/CyclisticBike.png" alt="Cyclistic bike-share case study" loading="lazy" />
+						</figure>
+						<span class="zoom-hint" aria-hidden="true"><i class="fas fa-search-plus"></i> Click to enlarge</span>
+					</div>
+					<div class="slide-foot">
+						<div class="slide-text" aria-live="polite">
+							<strong id="slideTitle">Live sales dashboard</strong>
+							<span id="slideSub">Formulas, KPIs and charts updating in real time</span>
+						</div>
+						<div class="slide-nav">
+							<span class="slide-count" id="slideCount">1 / 8</span>
+							<button class="slide-btn" id="slidePrev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+							<button class="slide-btn" id="slideNext" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+						</div>
+					</div>
+					<div class="slide-dots" id="slideDots"></div>
+				</div>
 			</div>
+		</section>
 
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Lawton Analytics. All rights reserved.</li>
-					</ul>
-
+		<!-- ABOUT -->
+		<section id="about" class="section" data-cell="B2" data-formula='=ABOUT(me)'>
+			<div class="wrap about">
+				<div class="monogram" aria-hidden="true"><span>SL</span></div>
+				<div class="about-copy">
+					<p class="eyebrow dark">About me</p>
+					<h2>I'm Thomas Boakye — most people know me as Sir Lawton.</h2>
+					<p>I help business professionals turn messy data into clear decisions, and I teach Excel the way it's actually used at work: practical, story-first, no fluff.</p>
+					<p>My roots are in finance and accounting, so I build the way I was trained — one source of truth, live formulas, and checks that catch what doesn't add up.</p>
+					<div class="cta-row">
+						<a class="btn btn-outline" href="https://www.linkedin.com/in/thomasboakye" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> My LinkedIn</a>
+					</div>
+				</div>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- WHAT I DO -->
+		<section id="services" class="section alt" data-cell="C3" data-formula='=FILTER(services, useful=TRUE)'>
+			<div class="wrap">
+				<p class="eyebrow dark">What I do</p>
+				<h2 class="section-title">Three ways I can help</h2>
+				<div class="cards-3">
+					<a class="card" href="#training">
+						<div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+						<h3>Excel training</h3>
+						<p>Hands-on sessions for teams and individuals.</p>
+						<span class="go">See training <i class="fas fa-arrow-right"></i></span>
+					</a>
+					<a class="card" href="#projects">
+						<div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+						<h3>Data analysis &amp; dashboards</h3>
+						<p>Messy spreadsheets turned into clear, live reports.</p>
+						<span class="go">See projects <i class="fas fa-arrow-right"></i></span>
+					</a>
+					<a class="card" href="#content">
+						<div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+						<h3>Daily Excel lessons</h3>
+						<p>Short, story-driven tips on LinkedIn, WhatsApp and Telegram.</p>
+						<span class="go">Start learning <i class="fas fa-arrow-right"></i></span>
+					</a>
+				</div>
+			</div>
+		</section>
 
-	</body>
+		<!-- TRAINING / WORKSHOP -->
+		<section id="training" class="section dark" data-cell="D4" data-formula='=WORKSHOP("Excel + AI", 3)'>
+			<div class="grid-bg faint" aria-hidden="true"></div>
+			<div class="wrap">
+				<p class="eyebrow">Flagship workshop</p>
+				<h2 class="section-title light">Excel + AI: Build a Live Business Dashboard</h2>
+				<p class="lead narrow">3 hours, hands-on. Arrive with messy data, leave with a working dashboard.</p>
+
+				<ol class="steps">
+					<li><span class="step-no">01</span><h3>Clean</h3><p>Power Query</p></li>
+					<li><span class="step-no">02</span><h3>Build</h3><p>Live dashboard</p></li>
+					<li><span class="step-no">03</span><h3>Accelerate</h3><p>Copilot &amp; AI</p></li>
+					<li><span class="step-no">04</span><h3>Validate</h3><p>Check the AI</p></li>
+				</ol>
+
+				<div class="cta-row">
+					<a class="btn btn-gold" href="https://www.linkedin.com/in/thomasboakye" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> Register interest</a>
+					<a class="btn btn-ghost" href="https://t.me/LawtonBIAnalytics" target="_blank" rel="noopener"><i class="fab fa-telegram-plane"></i> Get workshop dates</a>
+					<span class="format-note"><i class="fas fa-globe-africa"></i> Online &amp; in person</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- PROJECTS -->
+		<section id="projects" class="section alt" data-cell="E5" data-formula='=PROJECTS(status:="live")'>
+			<div class="wrap">
+				<p class="eyebrow dark">Selected work</p>
+				<h2 class="section-title">Projects</h2>
+
+				<div class="projects">
+					<a class="project linked" href="https://www.kaggle.com/datasets/thomasboakye/cyclistic-bike-share?datasetId=2600147" target="_blank" rel="noopener">
+						<div class="project-img"><img src="images/CyclisticBike.png" alt="Cyclistic bike-share case study" loading="lazy" /></div>
+						<h3>Cyclistic Bike-Share</h3>
+						<p>Turning casual riders into members.</p>
+						<span class="go">View on Kaggle <i class="fas fa-arrow-right"></i></span>
+					</a>
+
+					<a class="project linked" href="https://medium.com/@LawtonAnalytics/whatsapp-group-chat-1e5da2dc8e44" target="_blank" rel="noopener">
+						<div class="project-img contain"><img src="images/whatsapp-logo-1.png" alt="WhatsApp group chat analysis" loading="lazy" /></div>
+						<h3>WhatsApp Chat Analysis</h3>
+						<p>Who talks most, when, and about what.</p>
+						<span class="go">Read on Medium <i class="fas fa-arrow-right"></i></span>
+					</a>
+
+					<article class="project">
+						<div class="project-img art" aria-hidden="true"><i class="fas fa-book"></i></div>
+						<h3>Nonprofit Accounting Model</h3>
+						<p>General ledger, bank rec and financial statements in one workbook.</p>
+						<span class="soon">Case study coming soon</span>
+					</article>
+
+					<article class="project">
+						<div class="project-img art" aria-hidden="true"><i class="fas fa-calendar-check"></i></div>
+						<h3>Leave &amp; Attendance System</h3>
+						<p>Legacy trackers merged into one live register.</p>
+						<span class="soon">Case study coming soon</span>
+					</article>
+
+					<article class="project">
+						<div class="project-img art" aria-hidden="true"><i class="fas fa-boxes"></i></div>
+						<h3>Stock Control &amp; Reconciliation</h3>
+						<p>Stock you can check at any moment, gaps flagged automatically.</p>
+						<span class="soon">Case study coming soon</span>
+					</article>
+
+					<article class="project">
+						<div class="project-img art" aria-hidden="true"><i class="fas fa-user-clock"></i></div>
+						<h3>24/7 Shift Roster Model</h3>
+						<p>Rotating rosters with a coverage-gap matrix.</p>
+						<span class="soon">Case study coming soon</span>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- LEARN -->
+		<section id="content" class="section" data-cell="F6" data-formula='=TODAY() & " — new lesson"'>
+			<div class="wrap content">
+				<div class="content-copy">
+					<p class="eyebrow dark">Learn with me</p>
+					<h2>A new Excel lesson, every day.</h2>
+					<p>Short, practical tips you can use before lunch.</p>
+					<div class="channel-links">
+						<a class="ch wa" href="https://whatsapp.com/channel/0029VbCvEqU5Ui2bZIMirT0B" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span><strong>WhatsApp</strong>Join the channel</span></a>
+						<a class="ch tg" href="https://t.me/LawtonBIAnalytics" target="_blank" rel="noopener"><i class="fab fa-telegram-plane"></i><span><strong>Telegram</strong>Join the channel</span></a>
+						<a class="ch li" href="https://www.linkedin.com/in/thomasboakye" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i><span><strong>LinkedIn</strong>Follow me</span></a>
+					</div>
+				</div>
+
+				<!-- Sample post -->
+				<figure class="post">
+					<div class="post-head">
+						<span class="avatar">SL</span>
+						<div><strong>Sir Lawton</strong><span>Excel coach · Data analyst</span></div>
+					</div>
+					<div class="post-body">
+						<p>A new branch was added — and the summary didn’t move. 😬</p>
+						<p>✅ Point summaries at <em>one</em> register<br />✅ Use SUMIFS with codes<br />✅ New sheets flow in automatically</p>
+						<p>Build it once. Never rewire it again.</p>
+					</div>
+					<figcaption>Sample of my posting style</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<!-- CONTACT -->
+		<section id="contact" class="section dark contact" data-cell="G7" data-formula='=HYPERLINK(contact, "Let’s talk")'>
+			<div class="grid-bg faint" aria-hidden="true"></div>
+			<div class="wrap">
+				<p class="eyebrow">Get in touch</p>
+				<h2 class="section-title light">Let's talk.</h2>
+				<p class="lead narrow">Messy data, a team to train, or an idea — reach me on any of these.</p>
+				<ul class="socials">
+					<li><a href="https://www.linkedin.com/in/thomasboakye" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="https://whatsapp.com/channel/0029VbCvEqU5Ui2bZIMirT0B" target="_blank" rel="noopener" aria-label="WhatsApp channel" title="WhatsApp channel"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="https://t.me/LawtonBIAnalytics" target="_blank" rel="noopener" aria-label="Telegram channel" title="Telegram channel"><i class="fab fa-telegram-plane"></i></a></li>
+					<li><a href="https://x.com/_SirLawton" target="_blank" rel="noopener" aria-label="X" title="X">
+						<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+					<li><a href="https://github.com/SirLawton" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="wrap footer-inner">
+			<span>© <span id="year">2026</span> Sir Lawton. Built cell by cell.</span>
+			<a href="#home">Back to top ↑</a>
+		</div>
+	</footer>
+
+	<!-- Slideshow lightbox -->
+	<dialog class="lightbox" id="lightbox" aria-label="Enlarged screenshot">
+		<button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+		<img id="lbImg" src="" alt="" />
+		<p id="lbCap"></p>
+	</dialog>
+
+	<script src="assets/js/sirlawton.js?v=5"></script>
+</body>
 </html>
